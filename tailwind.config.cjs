@@ -6,13 +6,16 @@ module.exports = {
       colors: {
         first: '#272838',
         second: '#f3de8a',
-        third: '#eb9486',
-        fourth: '#7e7f9a',
-        fifth: '#f9f8f8'
+        third: '#7e7f9a',
+        fourth: '#de7f70',
+        fifth: '#f9f8f8',
       },
 
       fontFamily: {
         inter: ['Inter', 'sans-serif'],
+        varela: ['Varela Round', 'sans-serif'],
+        mplus: ['M PLUS Rounded 1c', 'sans-serif'],
+        lekton: ['Lekton', 'sans-serif'],
       },
       maxWidth: {
         layout: '1000px',
@@ -22,7 +25,7 @@ module.exports = {
       },
       minHeight: {
         layout: '1000px',
-      }
+      },
     },
   },
   plugins: [],

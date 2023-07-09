@@ -1,4 +1,5 @@
 ---
+import LeftSideMenu from "../components/LeftSideMenu";
 const { title } = Astro.props
 ---
 
@@ -11,14 +12,15 @@ const { title } = Astro.props
 		<meta name="generator" content={Astro.generator} />
 		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
 		<style>
-			@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+			@import url('https://fonts.googleapis.com/css2?family=Lekton:ital,wght@0,400;0,700;1,400&family=Varela+Round&display=swap');
 		</style>
-
+		
 		<title>{title}</title>
 	</head>
 	<body
-		class="flex min-h-screen justify-center items-center bg-first p-4 font-inter font-bold"
+		class="overflow-x-hidden text-second flex flex-col min-h-screen justify-center bg-first  font-inter font-bold"
 	>
+	<LeftSideMenu client:load />
 		<slot />
 	</body>
 </html>

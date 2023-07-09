@@ -1,20 +1,23 @@
 ---
 import Layout from '../layouts/Layout.astro'
-import MinimalLogo from '../components/MinimalLogo.astro'
+import MinimalLogo from '../components/MinimalLogo'
+import ScrollDownButton from '../components/ScrollDownButton';
+import GreetingText from '../components/GreetingText';
+import Experience from '../components/Experience';
 ---
 
 <Layout title="Portfolio">
 	<main
-		class="w-full text-second flex flex-col items-center justify-center text-lg italic p-2 gap-10 rounded-md"
+		class="w-full h-full min-h-screen flex flex-col items-center text-lg p-2 gap-20"
 	>
-		<MinimalLogo width={60} height={60} />
+		<GreetingText client:visible />
+		<MinimalLogo client:visible />
+		<ScrollDownButton client:only/>
+	</main>
 
-		<div class="flex flex-col w-[100vmin] gap-4">
-			<div class="w-[60vmin] h-[2px] bg-second self-end"></div>
-
-			<div class="w-[60vmin] h-[2px] bg-second self-center"></div>
-
-			<div class="w-[60vmin] h-[2px] bg-second"></div>
-		</div>
+	<main
+		class="w-full h-full min-h-screen bg-third flex flex-col items-center"
+	>
+		<Experience />	
 	</main>
 </Layout>
