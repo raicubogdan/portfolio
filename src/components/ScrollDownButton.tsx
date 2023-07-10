@@ -6,7 +6,7 @@ const ScrollDownButton = () => {
 
   return (
     <motion.div
-      className="flex justify-center h-11 w-[30px] border-4 border-second rounded-xl mt-10 justify-self-end p-[2px] pt-2 cursor-pointer"
+      className="flex justify-center h-11 w-[30px] border-4 border-second rounded-xl  justify-self-end p-[2px] pt-2 cursor-pointer"
       onClick={scroll}
       initial={{
         opacity: 0,
