@@ -5,9 +5,9 @@ const LeftSideMenu = () => {
   return (
     <motion.div
       className="fixed top-20 left-0"
-      // initial={{
-      //   opacity: 0,
-      // }}
+      initial={{
+        opacity: 0,
+      }}
       animate={{ opacity: 1 }}
       transition={{
         ease: 'easeInOut',
@@ -18,10 +18,15 @@ const LeftSideMenu = () => {
       <div className="relative">
         <div className="flex flex-col">
           <div className="h-[5vmin] w-[5vmin] bg-second text-fifth">
-            <FaGithubAlt size="5vmin" color="#eb9486" />
+            <a href="https://github.com/raicubogdan" target="_blank">
+              <FaGithubAlt size="5vmin" color="#eb9486" />
+            </a>
           </div>
+
           <div className="h-[5vmin] w-[5vmin] bg-third">
-            <FaLinkedinIn size="5vmin" color="#f3de8a" style={{ paddingTop: '5px' }} />
+            <a href="https://www.linkedin.com/in/bogdan-raicu-45a393131/ target='_blank'">
+              <FaLinkedinIn size="5vmin" color="#f3de8a" style={{ paddingTop: '5px' }} />
+            </a>
           </div>
         </div>
       </div>
