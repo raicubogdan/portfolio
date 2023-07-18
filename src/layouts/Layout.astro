@@ -1,5 +1,6 @@
 ---
-import LeftSideMenu from "../components/LeftSideMenu";
+import SocialMediaMenu from '../components/SocialMediaMenu'
+import SocialMediaMenuMobile from '../components/SocialMediaMenuMobile'
 const { title } = Astro.props
 ---
 
@@ -18,9 +19,10 @@ const { title } = Astro.props
 		<title>{title}</title>
 	</head>
 	<body
-		class="overflow-x-hidden text-second flex flex-col min-h-screen justify-center bg-first  font-inter font-bold"
+		class="overflow-x-hidden text-second flex flex-col min-h-[100vh] justify-center items-center bg-first font-inter font-bold"
 	>
-	<LeftSideMenu client:load />
+	<SocialMediaMenu client:only />
+	<SocialMediaMenuMobile client:only />
 		<slot />
 	</body>
 </html>

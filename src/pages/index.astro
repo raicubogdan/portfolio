@@ -4,20 +4,22 @@ import MinimalLogo from '../components/MinimalLogo'
 import ScrollDownButton from '../components/ScrollDownButton';
 import GreetingText from '../components/GreetingText';
 import Experience from '../components/Experience';
+import Footer from '../components/Footer';
 ---
 
 <Layout title="Portfolio">
 	<main
-		class="w-full h-full min-h-screen flex flex-col items-center text-lg p-2 gap-20"
+		class="w-full h-full min-h-[100vh] flex flex-col items-center text-lg p-2 gap-20 pt-20 lg:pt-10"
 	>
-		<GreetingText client:visible />
-		<MinimalLogo client:visible />
+		<GreetingText client:only />
+		<MinimalLogo client:only />
 		<ScrollDownButton client:only/>
 	</main>
 
 	<main
-		class="w-full h-full min-h-screen bg-third flex flex-col items-center"
+		class="w-full h-full min-h-[100vh] bg-first flex flex-col items-center "
 	>
 		<Experience />	
 	</main>
+	<Footer />
 </Layout>

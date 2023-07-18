@@ -34,7 +34,7 @@ const MinimalLogo = () => {
           animate={{
             opacity: 1,
           }}
-          transition={{ duration: 1.5, delay: 1.8 }}
+          transition={{ duration: 1.5, delay: 2.2 }}
           className="flex w-full h-1/4 bg-white self-center rotate-45 border-2 border-second"
         >
           <div className="bg-first h-full w-1/5"></div>

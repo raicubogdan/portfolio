@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 
 const ScrollDownButton = () => {
   const scroll = () => window.scroll({ top: window.innerHeight, behavior: 'smooth' })
-  window.scroll(0, 0)
+  // window.scroll(0, 0)
 
   return (
     <motion.div
