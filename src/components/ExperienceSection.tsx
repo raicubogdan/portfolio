@@ -32,7 +32,7 @@ const experiences = [
 const ExperienceSection = () => {
   return (
     <div className="font-lekton">
-      <h2 className="text-xl font-bold text-second tracking-widest mb-4">Experience</h2>
+      <h2 className="text-3xl font-bold text-second tracking-widest mb-4">Experience</h2>
       <div className="grid grid-cols-1 gap-4">
         {experiences.map(({ icon: Icon, title, subtitle, description, accent }, i) => (
           <motion.div
@@ -45,10 +45,10 @@ const ExperienceSection = () => {
             <div className="flex items-start gap-4">
               <Icon className="text-second w-8 h-8 shrink-0 mt-1" />
               <div>
-                <p className="text-second text-lg tracking-widest leading-5">
+                <p className="text-second text-2xl tracking-widest leading-7">
                   <span className="font-bold underline">{title}</span> {subtitle}
                 </p>
-                <p className="text-second leading-5 mt-3 font-normal">{description}</p>
+                <p className="text-second text-lg leading-7 mt-3 font-normal">{description}</p>
               </div>
             </div>
           </motion.div>

@@ -59,8 +59,8 @@ const TechGrid = () => {
       transition={{ duration: 0.6, delay: 0.8 }}
       className="border-2 border-second p-6 font-lekton"
     >
-      <h2 className="text-xl font-bold text-second tracking-widest mb-6">Technologies</h2>
-      <div className="grid grid-cols-5 sm:grid-cols-7 gap-6">
+      <h2 className="text-3xl font-bold text-second tracking-widest mb-6">Technologies</h2>
+      <div className="grid grid-cols-3 sm:grid-cols-5 gap-8">
         {icons.map(({ Icon, link, title }) => (
           <a
             key={title}
@@ -70,8 +70,8 @@ const TechGrid = () => {
             title={title}
             className="group flex flex-col items-center gap-2"
           >
-            <Icon className="w-8 h-8 text-second group-hover:text-fourth transition-colors" />
-            <span className="text-[10px] text-third group-hover:text-second transition-colors text-center leading-tight">
+            <Icon className="w-12 h-12 text-second group-hover:text-fourth transition-colors" />
+            <span className="text-sm text-third group-hover:text-second transition-colors text-center leading-tight">
               {title}
             </span>
           </a>
