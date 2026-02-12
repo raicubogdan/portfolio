@@ -9,10 +9,10 @@ const AboutCard = () => {
       className="border-2 border-second p-6 font-lekton"
     >
       <div className="flex items-center justify-between mb-4">
-        <h2 className="text-xl font-bold text-second tracking-widest">About Me</h2>
-        <p className="font-varela text-second text-2xl tracking-wider">hello!</p>
+        <h2 className="text-3xl font-bold text-second tracking-widest">About Me</h2>
+        <p className="font-varela text-second text-3xl tracking-wider">hello!</p>
       </div>
-      <p className="text-second leading-6 font-normal">
+      <p className="text-second text-lg leading-8 font-normal">
         I am a frontend developer with experience in TypeScript, React, and various CSS
         libraries such as TailwindCSS and ChakraUI. I also have backend experience working
         with Node, Prisma, PostgreSQL, Firebase Firestore, Python, and Django. Interested in
