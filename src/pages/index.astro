@@ -1,25 +1,38 @@
 ---
 import Layout from '../layouts/Layout.astro'
+import GreetingText from '../components/GreetingText'
 import MinimalLogo from '../components/MinimalLogo'
-import ScrollDownButton from '../components/ScrollDownButton';
-import GreetingText from '../components/GreetingText';
-import Experience from '../components/Experience';
-import Footer from '../components/Footer';
+import ScrollDownButton from '../components/ScrollDownButton'
+import ProfileCard from '../components/ProfileCard'
+import SkillsCard from '../components/SkillsCard'
+import AboutCard from '../components/AboutCard'
+import ExperienceSection from '../components/ExperienceSection'
+import TechGrid from '../components/TechGrid'
+import Footer from '../components/Footer'
 ---
 
-<Layout title="Portfolio">
-	<main
-		class="w-full h-full min-h-[100vh] flex flex-col items-center text-lg p-2 gap-20 pt-20 lg:pt-10"
-	>
-		<GreetingText client:only />
-		<MinimalLogo client:only />
-		<ScrollDownButton client:only/>
+<Layout title="Bogdan Raicu | Portfolio">
+	<!-- Hero / Intro -->
+	<main class="w-full min-h-screen flex flex-col items-center justify-center gap-20 p-2 pt-10 lg:pt-10">
+		<GreetingText client:only="react" />
+		<MinimalLogo client:only="react" />
+		<ScrollDownButton client:only="react" />
 	</main>
 
-	<main
-		class="w-full h-full min-h-[100vh] bg-first flex flex-col items-center "
-	>
-		<Experience />	
-	</main>
-	<Footer />
+	<!-- Grid Content -->
+	<div id="content" class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-[280px_1fr] gap-6 p-4 lg:p-8 lg:py-12">
+		<!-- Sidebar -->
+		<aside class="lg:sticky lg:top-8 lg:self-start flex flex-col gap-6">
+			<ProfileCard client:load />
+			<SkillsCard client:load />
+		</aside>
+
+		<!-- Main Content -->
+		<div class="flex flex-col gap-6">
+			<AboutCard client:load />
+			<ExperienceSection client:load />
+			<TechGrid client:load />
+			<Footer />
+		</div>
+	</div>
 </Layout>

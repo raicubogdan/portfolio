@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion'
+import { motion } from 'motion/react'
 
 const GreetingText = () => {
   return (
@@ -9,7 +9,7 @@ const GreetingText = () => {
       }}
       transition={{ duration: 1.5, delay: 2.2 }}
     >
-      <p className="font-varela non-italic text-4xl tracking-wider">hello!</p>
+      <p className="font-varela text-4xl tracking-wider">hello!</p>
     </motion.div>
   )
 }

@@ -1,12 +1,16 @@
-import { motion } from 'framer-motion'
+import { motion } from 'motion/react'
 
 const ScrollDownButton = () => {
-  const scroll = () => window.scroll({ top: window.innerHeight, behavior: 'smooth' })
-  // window.scroll(0, 0)
+  const scroll = () => {
+    const target = document.getElementById('content')
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
 
   return (
     <motion.div
-      className="flex justify-center h-11 w-[30px] border-4 border-second rounded-xl  justify-self-end p-[2px] pt-2 cursor-pointer"
+      className="flex justify-center h-12 w-[30px] border-4 border-second rounded-xl justify-self-end p-[2px] pt-2 cursor-pointer"
       onClick={scroll}
       initial={{
         opacity: 0,
@@ -20,7 +24,7 @@ const ScrollDownButton = () => {
     >
       <motion.div
         className="bg-second h-[12px] w-2 rounded-full"
-        animate={{ y: [0, 15, 15], opacity: [0, 1, 0] }}
+        animate={{ y: [0, 13, 13], opacity: [0, 1, 0] }}
         transition={{
           ease: 'easeInOut',
           duration: 1,
