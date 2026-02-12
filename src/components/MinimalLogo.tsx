@@ -10,7 +10,7 @@ const MinimalLogo = () => {
       transition={{ ease: 'easeInOut', duration: 1.5, delay: 0.2 }}
       className="self-center"
     >
-      <div className="grid w-full aspect-square grid-cols-2 grid-rows-2">
+      <div className="grid w-[60vmin] h-[60vmin] grid-cols-2 grid-rows-2">
         <motion.div
           className="w-full h-full bg-third"
           animate={{ borderTopLeftRadius: '50%', borderBottomLeftRadius: '50%' }}
