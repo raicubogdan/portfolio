@@ -1,6 +1,5 @@
 ---
-import SocialMediaMenu from '../components/SocialMediaMenu'
-import SocialMediaMenuMobile from '../components/SocialMediaMenuMobile'
+import '../styles/global.css'
 const { title } = Astro.props
 ---
 
@@ -8,21 +7,19 @@ const { title } = Astro.props
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
+		<meta name="description" content="Bogdan Raicu - Frontend Developer Portfolio" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
-		<style>
-			@import url('https://fonts.googleapis.com/css2?family=Lekton:ital,wght@0,400;0,700;1,400&family=Varela+Round&display=swap');
-		</style>
-		
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Lekton:ital,wght@0,400;0,700;1,400&family=Varela+Round&display=swap"
+			rel="stylesheet"
+		/>
 		<title>{title}</title>
 	</head>
-	<body
-		class="overflow-x-hidden text-second flex flex-col min-h-[100vh] justify-center items-center bg-first font-inter font-bold"
-	>
-	<SocialMediaMenu client:only />
-	<SocialMediaMenuMobile client:only />
+	<body class="min-h-screen bg-first text-second font-inter font-bold">
 		<slot />
 	</body>
 </html>

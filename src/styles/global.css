@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@theme {
+  --color-first: #272838;
+  --color-second: #f3de8a;
+  --color-third: #7e7f9a;
+  --color-fourth: #de7f70;
+  --color-fifth: #f9f8f8;
+
+  --font-inter: "Inter", sans-serif;
+  --font-varela: "Varela Round", sans-serif;
+  --font-mplus: "M PLUS Rounded 1c", sans-serif;
+  --font-lekton: "Lekton", sans-serif;
+
+  --max-width-layout: 1000px;
+  --max-height-layout: 1000px;
+  --min-height-layout: 1000px;
+}
